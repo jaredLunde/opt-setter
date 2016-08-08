@@ -1,1 +1,1 @@
-`npm install opt-setter`
+`npm install --save opt-setter`
