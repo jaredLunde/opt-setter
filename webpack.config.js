@@ -68,22 +68,21 @@ module.exports = {
     new webpack.DefinePlugin({'process.env': {NODE_ENV: '"production"'}}),
     /**
     new webpack.optimize.CommonsChunkPlugin({name: "vendor",
-                                             filename: "vendor.dev.js"}),
+                                             filename: "vendor.js"}),
     */
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         pure_getters: true,
         unsafe: true,
         unsafe_comps: true,
-        warnings: false,
-        drop_console: true
+        warnings: false
       },
       output: {
         comments: false
       }
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
