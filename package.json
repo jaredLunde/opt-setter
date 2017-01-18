@@ -1,13 +1,13 @@
 {
   "name": "opt-setter",
-  "version": "0.0.7-alpha",
+  "version": "0.1.0",
   "main": "index.js",
   "private": false,
   "dependencies": {
     "object-assign": "^4.1.0"
   },
   "devDependencies": {
-    "webpack2-es7-boilerplate": "*"
+    "webpack2-es7-boilerplate": "^0.1.2"
   },
   "repository": {
     "type": "git",
