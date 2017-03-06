@@ -1,10 +1,9 @@
 {
   "name": "opt-setter",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "index.js",
   "private": false,
   "dependencies": {
-    "object-assign": "^4.1.0"
   },
   "devDependencies": {
     "webpack2-es7-boilerplate": "^0.1.2"
