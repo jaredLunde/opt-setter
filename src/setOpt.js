@@ -5,7 +5,8 @@ export default (obj, opt, optNames, throws = true) => {
   if (optNames !== void 0 && optNames !== null) {
     const newObj = {}
 
-    for (let name of optNames) {
+    for (let i = 0; i < optNames.length; i++) {
+      const name = optNames[i]
       newObj[name] = undefined
     }
 
